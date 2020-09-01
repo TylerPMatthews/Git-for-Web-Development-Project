@@ -105,7 +105,7 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
     git commit
     git push
     create poll request
-    
+
     
 
 
@@ -116,10 +116,28 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+    block starts a new line and takes up full width. Inline does not start a new line 
+    and takes up the width neccessary.
     2. What happens when an element is positioned absolutely? 
+    position is absolute to its relative ancestors.
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    Relativly position it 
+
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+
+    block: div , h1-6 <p>
+    inline:span a 
+    inline/block button
+
+    The box model is a box that wraps all HTML. It contains content, padding, borders and margin.
+    The issue is that it gives many design erros such as overlapping or other issues. 
+    The fix is 
+    "box-sizing: border-box". 
+    apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
 
 
 
